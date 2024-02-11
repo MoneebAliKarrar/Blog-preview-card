@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+body{
+    background-color:  hsl(47, 88%, 63%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Figtree;
+    margin: 0;
+}
+img{
+    width: 100%;
+    border-radius: .7rem;
+}
+main{
+    width: 20%;
+    background-color: hsl(0, 0%, 100%);
+    border: .1rem solid hsl(0, 0%, 7%);
+    border-radius: .7rem;
+    box-shadow: .3rem .2rem;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: hsl(47, 88%, 63%);
+    width: 25%;
+    padding: .2rem;
+    text-align: center;
+    border-radius: .2rem;
+    margin-top: .4rem;
+
+}
+p{
+    font-size: .8rem;
+}
+#publish{
+    font-weight: bold;
+}
+h1{
+    font-size: 1.2rem;
+}
+h1:hover{
+    color: hsl(47, 88%, 63%); ;
+    cursor: pointer;
+}
+main:hover{
+    box-shadow: .4rem .5rem ;
+}
+.writer{
+    font-size: .7rem;
+    font-weight: bold;
+}
+.writer::before{
+    content: '';
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem; 
+    background: url('./assets/images/image-avatar.webp') no-repeat center center;
+    background-size: cover; 
+    margin-right: .7rem;
+    vertical-align: middle;
+}
+.maincontent{
+    margin: .6rem;
+}
+@media screen and (max-width : 800px) {
+    main{
+        width: 90%;
+    }
+}
